@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ASISTS Dashboard Design System */
+
+@layer base {
+  :root {
+    /* Core surfaces */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Deep institutional blue */
+    --primary: 217 71% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light slate */
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 215 25% 25%;
+
+    /* Muted */
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Accent */
+    --accent: 217 71% 95%;
+    --accent-foreground: 217 71% 30%;
+
+    /* Status colors for benchmarks */
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+    --success-muted: 152 50% 94%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 15%;
+    --warning-muted: 38 80% 94%;
+    
+    --danger: 0 72% 51%;
+    --danger-foreground: 0 0% 100%;
+    --danger-muted: 0 70% 95%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 217 71% 35%;
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 217 71% 45%;
+    --chart-2: 152 60% 42%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 0 72% 51%;
+
+    /* Sidebar */
+    --sidebar-background: 217 71% 20%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 210 100% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 71% 28%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 217 50% 30%;
+    --sidebar-ring: 210 100% 70%;
+  }
+
+  .dark {
+    --background: 215 25% 10%;
+    --foreground: 210 20% 95%;
+
+    --card: 215 25% 13%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 215 25% 13%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 100% 65%;
+    --primary-foreground: 215 25% 10%;
+
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 215 20% 20%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 217 50% 25%;
+    --accent-foreground: 210 100% 80%;
+
+    --success: 152 60% 50%;
+    --success-foreground: 152 60% 10%;
+    --success-muted: 152 40% 18%;
+    
+    --warning: 38 92% 55%;
+    --warning-foreground: 38 92% 10%;
+    --warning-muted: 38 60% 18%;
+    
+    --danger: 0 72% 55%;
+    --danger-foreground: 0 0% 100%;
+    --danger-muted: 0 50% 18%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 22%;
+    --input: 215 20% 22%;
+    --ring: 210 100% 65%;
+
+    --sidebar-background: 215 25% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 100% 70%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 210 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
